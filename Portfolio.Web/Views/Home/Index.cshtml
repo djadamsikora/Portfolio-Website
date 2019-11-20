@@ -1,0 +1,436 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    string GetRandomDisplayNumber()
+    {
+        var x = new Random();
+        return "display-" + Math.Floor(x.NextDouble() * 5);
+    }
+}
+    <div class="main-wrapper">
+
+        <div class="m-3">
+            <div class="row">
+                <div class="col">
+
+                    <section id="home" class="">
+                        <div class="m-3">&nbsp;</div>
+                        <h2>15yr Experienced Developer</h2>
+                        <div class="row"> 
+                            <div class="col">
+                                <p>I've been developing commercial web applications for over 15 years starting with Joomla! CMS and currently on the Dotnet Core bandwagon. I've developed everything from simple websites, calendar and booking systems and shopping carts to video game AI, full stack APIs and enterprise middleware. </p>
+                                <h4>Dotnet Core</h4>
+                                <img width="200" height="200" class="float-right m-3" src="/img/logos/NET_Core_Logo.png" />
+                                <p>
+                                    My latest tool of the trade is Microsoft's Dotnet Core. I've been working with this platform since the early alpha stages, and currently build using the latest version 3.
+                                    I've completed almost a dozen projects using the platform, deployed on Amazon AWS, local IIS servers and virtual machines ( Docker ). The statistics and inventory systems I built for NWI have proven to be stable at over 100k concurrent users, and operates effeciently with over 500 million records in some tables.
+                                </p>
+                                <h4>AWS Amazon</h4>
+                                <p>
+                                    For 6 years now, I've been deploying all projects using Amazon Web Services. Their reliability has been rock-solid, and the tools provided make deployment quite easy. In addition, I've worked with Jenkins & Perforce as a repository and build system.
+                                    <img width="200" height="75" class="float-left m-3" src="/img/logos/AmazonWebservices_Logo.svg" />
+
+                                    In that time, i've worked with EC2, Elastic Beanstalk, Fargate/ECS, Aurora RDS clusters, S3, Elasticache and DynamoDb. I've set up private/public VPC arrangements, hybrid infrastructure and Cloudwatch templates.
+                                </p>
+                                <div class="clearfix m-4"></div>
+                                <div class="card-group">
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/logos/insurgency_logo.jpg" />
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/logos/day-of-infamy_logo.jpg" />
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/logos/insurgency-sandstorm_logo.jpg" />
+                                    </div>
+                                </div>
+                                <div class="clearfix m-4"></div>
+                                <h4>C++ Game Development</h4>
+                                <img src="/img/adam_character.jpg" height="200" class="float-right m-3" />
+                                <p>
+                                    I've worked on three video games, all written in C++. Insurgency and Day Of Infamy were built using Source Engine, and Insurgency Sandstorm was built using UE4. For Insurgency, I used the Nextbot system designed
+                                    for Left 4 Dead, and enhanced it for the advanced combat needs of Insurgency. That same AI was re-used for Day Of Infamy with a new behavior stack, but the awareness and movement of the original bots remained.
+                                    In addition to the AI behaviors, I made enhancements to the navigation mesh generation system and A* pathfinding algorithm.
+                                </p>
+                                <h4>Web Development</h4>
+                                <p>
+                                    I started programming websites and web applications right out of high school. My interest in online-based gaming led me to start working on informational sites related to these games. Not too long after I had
+                                    My first official website release for Global FX Radio, an online subscription site that utilized Joomla! and Paypal to purchase and manage user subscriptions to online podcasts. My ability to produce a usable site
+                                    gave me the confidence and experience to grow to where I am now. Since then, I've completed well over a dozen website projects.
+                                </p>
+                                <div class="card-group">
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/sites/blumcenterstore.jpg" />
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/sites/playinsurgency.png" />
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/sites/thelistwmc.png" />
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/img/sites/newworldinteractive.com.png" />
+                                    </div>
+                                </div>
+                                <div class="clearfix m-4"></div>
+                                <h4>Hardware and Networking</h4>
+                                <img src="/img/adam-sikora_computer.jpg" class="float-right m-4" />
+                                <p>
+                                    At the start of it all was a love for computers, and what they represent. I am old enough to remember the internet pre-AOL, and have been utilizing digital communication in my social life well before any social
+                                    networks existed. I've built just about every computer I've owned, and many more for friends, family and clients. Over time, I've learned a lot about computer hardware and networking for the video games, as I was in charge
+                                    of setting up the workstations and networks.
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="about" class="">
+                        <div class="m-3">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-12 col-xl-6">
+                                <h1>About Me</h1>
+                                <p>I've lived in New York, Miami, Denver and Virginia Beach.</p>
+                                <p>
+
+                                </p>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="home-carousel">
+                                    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+
+                                        <ul class="carousel-indicators">
+                                            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#home-carousel" data-slide-to="1"></li>
+                                            <li data-target="#home-carousel" data-slide-to="2"></li>
+                                            <li data-target="#home-carousel" data-slide-to="3"></li>
+                                            <li data-target="#home-carousel" data-slide-to="4"></li>
+                                            <li data-target="#home-carousel" data-slide-to="5"></li>
+                                            <li data-target="#home-carousel" data-slide-to="6"></li>
+                                            <li data-target="#home-carousel" data-slide-to="7"></li>
+                                            <li data-target="#home-carousel" data-slide-to="8"></li>
+                                            <li data-target="#home-carousel" data-slide-to="9"></li>
+                                            <li data-target="#home-carousel" data-slide-to="10"></li>
+                                            <li data-target="#home-carousel" data-slide-to="11"></li>
+                                        </ul>
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="/img/adam-sikora_new-world-interactive_denver-colorado.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_caleb-sikora_boulder-co.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_caleb-sikora_guanella-pass_colorado.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_kids_jones-pass_berthoud-falls.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_piney-lake_avon-vail-colorado.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_flying-crane.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_bill-kelly_the-real-dmt.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_portland.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_atv_colorado.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_idma_red-carpet.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_gray-devio_france.jpg" alt="">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="/img/adam-sikora_wedding.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <a class="carousel-control-prev" href="#home-carousel" data-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#home-carousel" data-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects" class="">
+                        <div class="m-3">&nbsp;</div>
+                        <h2>Projects</h2>
+                        <div class="card-columns">
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/newworld-interactive_logo_small.png" />
+                                <div class="card-body">
+                                    2019 - Design, budget,
+                                    purchase, installation and
+                                    deployment of Calgary
+                                    development studio, internal
+                                    network with 34 station
+                                    capacity, 10Gbe backbone<br />
+                                    <small>
+                                        ( Dell S4112T, N1124T, VEP4600
+                                        pfSense, R540 Perforce, R330 AD DC )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/newworld-interactive_logo_small.png" /> 
+                                <div class="card-body">
+                                    2019 - Statistics, Profile,
+                                    Progression and Inventory
+                                    systems for Insurgency:
+                                    Sandstorm<br />
+                                    <small>
+                                        ( C++ UE4 Engine, Dotnet Core 2.1,
+                                        Docker, SQS, Elastic Beanstalk,
+                                        Elasticache, DynamoDb, Aurora
+                                        Postgres Cluster )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/adam-sikora_new-world-interactive_denver-colorado.jpg" />
+                                <div class="card-body">
+                                    2017 - Deployment of Denver
+                                    development studio, internal
+                                    network and workstations
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/day-of-infamy_logo.jpg" />
+                                <div class="card-body">
+                                    2016 - Statistics, progression
+                                    and Inventory systems for Day
+                                    Of Infamy<br />
+                                    <small>
+                                        ( C++ Source Engine, Dotnet Core 1.1,
+                                        Docker, Postgres, Elastic Beanstalk,
+                                        SQS, Elasticache )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/newworld-interactive_logo_small.png" />
+                                <div class="card-body">
+                                    2015 - Deployment of
+                                    Amsterdam development
+                                    studio, internal network and
+                                    workstations
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/insurgency_logo.jpg" />
+                                <div class="card-body">
+                                    2012-2014 - AI and Coop
+                                    game mode development for
+                                    Insurgency<br />
+                                    <small>( C++ Source Engine )</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/sites/playinsurgency.png" />
+                                <div class="card-body">
+                                    2012 - Game key sales
+                                    website<br />
+                                    <small>( Joomla!, PHP, MySQL )</small>
+                                </div>
+                                <a href="https://web.archive.org/web/20130406190755/https://www.playinsurgency.com/" class="card-link">View Archive</a>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/sites/blumcenterstore.jpg" />
+                                <div class="card-body">
+                                    2013 - Immune System Recovery Plan Store<br />
+                                    <small>
+                                        ( Pinnacle Cart, PHP, MySQL )
+                                    </small>
+                                </div>
+                                <a class="card-link" href="https://web.archive.org/web/20130813013235/http://www.blumcenterstore.com/">View Archive</a>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/sites/immune_system_recovery_plan.png" />
+                                <div class="card-body">
+                                    2013 - Immune System Recovery Plan Website<br />
+                                    <small>( Wordpress, PHP, MySQL )</small>
+                                </div>
+                                <a class="card-link" href="https://web.archive.org/web/20130404011232/http://immuneprogram.com/">View Archive</a>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/sites/thelistwmc.png" />
+                                <div class="card-body">
+                                    2009-2012 - The List website
+                                    and print publications<br />
+                                    <small>
+                                        ( Joomla!, PHP, MySQL, Indesign )
+                                    </small>
+                                </div>
+                                <a class="card-link" href="https://web.archive.org/web/20130317010012/http://thelistwmc.com/">View Archive</a>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/TheFoodEvolutionLogo.png" />
+                                <div class="card-body">
+                                    2010 - Customized website
+                                    calendar and online booking<br />
+                                    <small>
+                                        system ( Joomla!, PHP, MySQL )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/epi-logo.jpg" />
+                                <div class="card-body">
+                                    2008 - Inventory, shipping and<br />
+                                    <small>
+                                        QC database ( MySQL, Access )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/globalfxllc.gif" />
+                                <div class="card-body">
+                                    2007 - Custom podcast
+                                    subscription website<br />
+                                    <small>
+                                        ( Joomla!, PHP, MySQL )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/suffolk-otb.png" />
+                                <div class="card-body">
+                                    2006 - Advanced accounting<br />
+                                    <small>
+                                        spreadsheets ( Excel )
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="/img/logos/suffolk-otb.png" />
+                                <div class="card-body">
+                                    2005 - Lottery accounting and
+                                    inventory software<br />
+                                    <small> ( Access )</small>
+                                </div>
+                            </div>
+                            <div class="card">
+
+                                <img class="card-img-top" src="/img/logos/AGMBlogo.png" />
+                                <div class="card-body">
+                                    2003 - File Storage
+                                    management DB<br />
+                                    <small> ( Access )</small>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="work" class="">
+                        <div class="m-3">&nbsp;</div>
+                        <div class="card-columns">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">New World Interactive</h4>
+                                    <a target="_blank" href="http://newworldinteractive.com" class="card-link">Website</a>
+                                    <p>
+                                        At NWI my company roles have been development and maintenance of the various websites, purchasing
+                                        and deployment of internal hardware and networking, development and implementing company security
+                                        policy, maintenance of internal user accounts and development of infrastructure necessary to produce
+                                        product. I have also worked on each of the games that were released. For Insurgency, I programmed the
+                                        AI enemy combattant and many of the cooperative game modes. This AI was built onto further for Day Of
+                                        Infamy, which I programmed the player statistics system and progression system with Steam integrated
+                                        inventory items. For Sandstorm, I improved upon the previous built system, implementing the player profile
+                                        and inventory systems in the game code and UI. I also designed, developed and implemented a cloudbased
+                                        back end using scalable containers, database read replicas, transaction queueing and a custom
+                                        web based report interface.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter Music Conference</h4>
+                                    <a target="_blank" href="http://wintermusicconference.com" class="card-link">Website</a>
+                                    <p>
+                                        At WMC my roles were the maintenance and development of the website, online and on-site payment
+                                        systems, and internal client systems. While employed, I developed a website known as The List, with over
+                                        500 events per year and more than 1m daily page views during the event. In addition, I worked on the
+                                        layout and printing of the two main publications including data export from The List website into Indesign.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Electronic Payments, Inc.</h4>
+                                    <a target="_blank" href="http://electronicpayments.com" class="card-link">Website</a>
+                                    <p>
+                                        At EPI my roles included technical support for merchant credit card terminals and point of sale systems.
+                                        While performing my support duties, I developed shipping software to aid in the deployment of merchant
+                                        equipment. This software was based in MS Access, with the ability to pull/post data from a MySQL
+                                        database and FEDEX shipping manager and logged all shipping with images of the items shipped.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Suffolk Off-Track Betting</h4>
+                                    <a target="_blank" href="http://suffolkotb.com" class="card-link">Website</a>
+                                    <p>
+                                        At OTB my initial position was with maintenance, but I was promoted to the Accounting department. In
+                                        this department, I did payroll for 250+ employees on a bi-weekly basis and worked on software that kept
+                                        track of NYS Lottery sold at each branch and reconciled monthly statements. I also worked on accounting
+                                        spreadsheets for a pending lawsuit between OTB and regional tracks to calculate withheld escrow.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+@section Scripts{
+    <script>
+
+        var SpinPercent = 0;
+
+        $(document).ready(function () {
+            var children = $("#tag-cloud").children();
+
+            children.sort(function () {
+                return .5 - Math.random();
+            });
+
+            $("#tag-cloud").empty();
+            $("#tag-cloud").append(children);
+
+
+            setInterval(function () {
+                SpinPercent = SpinPercent + 0.025;
+                $("body").css('background-position', SpinPercent + '% center');
+            }, 50);
+
+        });
+
+    </script>
+}

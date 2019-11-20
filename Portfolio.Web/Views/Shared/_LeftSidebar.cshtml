@@ -1,0 +1,66 @@
+﻿@{ 
+    string activeController = ViewContext.RouteData.Values["Controller"].ToString();
+    string activeAction = ViewContext.RouteData.Values["Action"].ToString();
+    bool bIsHomepage = activeController == "Home" && activeAction == "Index";
+    string GetRandomDisplayNumber()
+    {
+        var x = new Random();
+        return "display-" + Math.Floor(x.NextDouble() * 5);
+    }
+}
+
+<aside role="complementary" class="border js-fullheight left-sidebar">
+    <div class="text-center">
+        <div class="face-img-wrapper">
+            <div class="face-img" style="background-image: url('/img/adam-sikora-face.jpg');"></div>
+        </div>
+        <h1><a href="/">Adam Ross Sikora</a></h1>
+        <span class="title">Full Stack Developer</span>
+    </div>
+    <nav role="navigation" class="navbar">
+        <div class="collapse show">
+            <ul>
+                @if (bIsHomepage)
+                {
+                    <li class="active"><a href="#home" data-nav-section="home">Home</a></li>
+                    <li><a href="#about" data-nav-section="about">About</a></li>
+                    <li><a href="#projects" data-nav-section="projects">Projects</a></li>
+                    <li><a href="#work" data-nav-section="work">Work</a></li>
+                    <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                }
+                else
+                {
+                    <li class="active"><a asp-controller="Home" asp-action="Index" asp-fragment="home">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Index" asp-fragment="about">About</a></li>
+                    <li><a asp-controller="Home" asp-action="Index" asp-fragment="projects">Projects</a></li>
+                    <li><a asp-controller="Home" asp-action="Index" asp-fragment="work">Work</a></li>
+                    <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                }
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div id="tag-cloud">
+            @{
+                List<string> Tags = new List<string> {
+                        "Performance", "Profiling", "Networking", "HTML", "CSS", "Javascript", "JQuery", "Ajax", "PHP", "MySQL", "PostgreSQL", "SQL Server", "MS Access", "Excel", "C++","Unreal Engine","Game Development", "C#", "Dotnet Core", "Source Engine", "Entity Framework", "Joomla!", "Wordpress", "IAM", "EC2", "Elastic Beanstalk", "Aurora RDS", "S3", "Elasticache", "DynamoDb", "SQS", "Docker", "Jira", "Mantis", "Jenkins", "GSuite", "Office365", "Active Directory", "IIS", "Exchange", "Dreamweaver", "Photoshop", "Indesign"
+                };
+            }
+
+            @foreach (var tag in Tags)
+            {
+                <span class="badge badge-secondary @GetRandomDisplayNumber()">@tag</span>
+            }
+        </div>
+    </div>
+    <div class="sidebar-footer">
+        <p>
+            <small>
+                Copyright &copy; @DateTime.Now.Year Adam Sikora, All rights reserved
+            </small>
+        </p>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+    </div>
+</aside>

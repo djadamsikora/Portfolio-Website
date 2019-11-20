@@ -328,3 +328,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/Portfolio.Web/appsettings.Development.json
+/Portfolio.Web/aws-ecs-tools-defaults.json

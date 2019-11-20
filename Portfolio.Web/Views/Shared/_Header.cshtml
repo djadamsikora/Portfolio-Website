@@ -1,0 +1,60 @@
+﻿@{ 
+
+    string activeController = ViewContext.RouteData.Values["Controller"].ToString();
+    string activeAction = ViewContext.RouteData.Values["Action"].ToString();
+    bool bIsHomepage = activeController == "Home" && activeAction == "Index";
+}
+
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light border-bottom box-shadow mb-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-inline d-sm-none d-lg-inline" asp-area="" asp-controller="Home" asp-action="Index">Adam Sikora's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <partial name="_LoginPartial" />
+                <ul class="navbar-nav flex-grow-1">
+                    @if (bIsHomepage)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#home" data-nav-section="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about" data-nav-section="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#projects" data-nav-section="projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#work" data-nav-section="work">Work</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-fragment="home" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index" asp-fragment="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index" asp-fragment="projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index" asp-fragment="work">Work</a>
+                        </li>
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="m-3">&nbsp;</div>
