@@ -14,5 +14,6 @@ namespace Portfolio.Web.Identity
         }
         public DateTime UserCreated { get; set; }
         public DateTime UserLastLogin { get; set; }
+        public float Version { get; set; }
     }
 }
